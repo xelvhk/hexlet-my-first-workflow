@@ -1,0 +1,11 @@
+# file: .github/workflows/main.yml
+name: main
+
+on: push
+jobs:
+  build:
+  
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v3
+      - run: make say-hello
